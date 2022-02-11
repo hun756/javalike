@@ -38,3 +38,14 @@ build/
 # Doxygen output
 html/
 latex/
+
+# Buid directory
+build/
+
+# Clang Cache
+.cache/
+
+# Editors
+.vscode/
+.vs/
+.idea/
