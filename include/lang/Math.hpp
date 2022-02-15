@@ -11,7 +11,6 @@
 
 namespace Javalike::Lang
 {
-
 	class MathException : public std::exception
 	{
 		using __STD_GLUTILITIES_EXCEPTION_DATA = std::string;
@@ -167,7 +166,8 @@ namespace Javalike::Lang
 		{
 			return std::cbrt(a);
 		}
-		// Returns the smallest (closest to negative infinity) double value that is greater than or equal to the argument and is equal to a mathematical integer.
+		// Returns the smallest (closest to negative infinity) double value that is greater than or equal to
+		// the argument and is equal to a mathematical integer.
 		static double ceil(double a)
 		{
 			return std::ceil(a);
@@ -212,7 +212,8 @@ namespace Javalike::Lang
 		{
 			return std::expm1(x);
 		}
-		// Returns the largest (closest to positive infinity) double value that is less than or equal to the argument and is equal to a mathematical integer.
+		// Returns the largest (closest to positive infinity) double value that is less than or equal to
+		//  the argument and is equal to a mathematical integer.
 		static double floor(double a)
 		{
 			return std::floor(a);
@@ -469,31 +470,36 @@ namespace Javalike::Lang
 			return std::tanh(x);
 		}
 		// Converts an angle measured in radians to an approximately equivalent angle measured in degrees.
-		static double toDegrees(double angrad) {
+		static double toDegrees(double angrad)
+		{
 			// TODO implements duction
 			return 0.0;
-		 }
+		}
 		// Returns the value of the long argument; throwing an exception if the value overflows an int.
-		static int toIntExact(long value) {
+		static int toIntExact(long value)
+		{
 			// TODO implements duction
 			return 0.0;
-		 }
+		}
 		// Converts an angle measured in degrees to an approximately equivalent angle measured in radians.
-		static double toRadians(double angdeg) { 
+		static double toRadians(double angdeg)
+		{
 			// TODO implements duction
 			return 0.0;
 		}
 		// Returns the size of an ulp of the argument.
-		static double ulp(double d) { 
+		static double ulp(double d)
+		{
 			// TODO implements duction
 			return 0.0;
 		}
 		// Returns the size of an ulp of the argument.
-		static float ulp(float f) { 
+		static float ulp(float f)
+		{
 			// TODO implements duction
 			return 0.0;
 		}
 	};
-} // namespace JavaLike::Lang
+} // namespace Javalike::Lang
 
 #endif /* End of include guard : JAVA_LANG_MATH_HPP */
