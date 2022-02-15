@@ -35,6 +35,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
 # Things to always include as flags. Change as needed.
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")  
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O2")  
 
 # Set debug/coverage flags, or optimize, depending on options.
 if (debug)
@@ -81,6 +82,9 @@ add_executable(main.x app/main.cpp)   # Name of exec. and location of file.
 add_dependencies(main.x engine)       # main.cpp uses the 'engine', add dep.
 target_link_libraries(main.x engine)  # Link the executable to the 'engine'.
 
+add_executable(sample.x samples/sample_runner.cpp)   # Name of exec. and location of file.
+add_dependencies(sample.x engine)       # main.cpp uses the 'engine', add dep.
+target_link_libraries(sample.x engine)  # Link the executable to the 'engine'.
 
 
 # --------------------------------------------------------------------------------
